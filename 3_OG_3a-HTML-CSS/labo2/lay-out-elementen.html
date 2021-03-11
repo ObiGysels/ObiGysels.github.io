@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="PC techniek">
+    <meta name="description" content="Oefeningen en opdrachten">
+    <meta name="keywords" content="html, css, ">
+    <meta name="author" content="P. Schrooten">
+    <meta name="date" content="2021-01-28">
+    <meta name="time" content="20:23:33">
+    <!-- de achtergronkleur is hexadecimaal samengesteld via CSS -->
+    <style>
+        body {
+            background-color: #92a8d1;
+        }
+    </style>
+</head>
+
+<body>
+    <title>Belangrijke lay-out html elementen </title>
+    </head>
+
+    <body>
+        <!-- semantische lay-out elementen -->
+        <header>
+            <!-- Het nav element is een div met een specifieke semantiek (bedoeling/betekenis). Het is een blokelement, dus paginabreed, waarin je de navigatie van je pagina plaatst.
+
+Het <nav>-element omsluit een blok met koppelingen die voor de navigatie instaan. Dit kan bijvoorbeeld een navigatiemenu van een website zijn.
+
+Spraaksynthesizers kunnen bijvoorbeeld dit element overslaan bij het voorlezen, zodat de gebruiker sneller de daadwerkelijke inhoud van het document te horen krijgt.
+
+<nav> … </nav>
+De HTML5 specificatie vermeldt ook dat het <nav> element enkel dient voor de hoofdnavigatie. Als voorbeeld geven ze pagina met twee <nav> elementen, een om op de website te navigeren en een om binnen dezelfde pagina te navigeren.
+
+. -->
+
+            <nav> <a href="../index.html">Index/Homepagine> </a> </nav>
+            <p>Het navigatie of nav-element</p>
+        </header>
+        <p>
+            <h1>Semantische lay-out elementen en hun belang</h1>
+        </p>
+        <!-- 
+Het <header> element is een div met een specifieke semantiek (bedoeling/betekenis). Het is een blokelement, dus paginabreed, waarin je info bovenaan je pagina plaatst.
+
+De kop van een webpagina bevat gewoonlijk het logo van het bedrijf of de organisatie, evenals de hoofdnavigatiebalk. Dat gedeelte, aan de bovenkant van elke webpagina, is vaak onderdeel van een sjabloon en daarom altijd hetzelfde op alle pagina's binnen een website of een onderdeel van een website. HTML 5 bevat dan ook een <header> tag die ontwikkelaars gebruiken de koptekstsectie van elke webpagina aan te duiden.
+
+Opmerking: Verwar <header> niet met <head> in de HTML-code, waarin de paginatitel, meta-tags en koppelingen naar bestanden worden geplaatst.
+
+Het woord header wordt vaak gebruikt als een synoniem hetgeen in het Engels masthead heet. Er is een cruciaal verschil tussen het header element in HTML5 en het algemeen aanvaarde gebruik van het woord hoofding of masthead. Er is meestal maar één hoofding op een pagina, maar een HTML 5 document kan meerdere header elementen bevatten. Je kan het header element binnen een section element gebruiken, bijvoorbeeld. Eigenlijk, moet je een header  gebruiken binnen een sectie. Immers de specificatie beschrijft het section element als "een thematische groepering van de inhoud, meestal met een titel."
+. -->
+        <main>
+
+            <!-- article is het onderwerp van je site -->
+            <article>1. Het eerste art over article</article><br>
+            <!-- Een <article> groepeert inhoud die bij elkaar hoort en deel uitmaakt van een groter geheel maar tegelijkertijd ook op zich zelf kan bestaan. Bijvoorbeeld een blogartikel , een nieuwsbrief- of krantenartikel, een commentaar bij een artikel of elke andere op zich zelf bestaande vorm van inhoud.
+
+De inhoud van een <article> is een betekenisvol en op zichzelf bestaand geheel (entiteit) en kan in zijn geheel uit de website gelicht worden om in andere context gebruikt of verspreid te worden.
+
+Is dat laatste niet nodig gebruik je voor de indeling van je pagina beter <section>.
+. -->
+            <article>2. Het tweede art over section</article>
+            <!-- Een sectie is een gespecialiseerd deel (component, onderdeel) van een groter geheel.
+Het element <section> beschrijft een sectie van de applicatie of van het document. Een sectie bevat een bij elkaar horende groep elementen met inhoud. Een sectie kan een eigen koptekst hebben maar dat is niet verplicht. Voorbeelden van secties van een pagina zijn tabbladen van een tabbladgroep, of genummerde elementen van een opsomming.
+Een webpagina kan meerdere <section> elementen bevatten.
+
+Het <section> element is een semantisch element en gebruik je niet voor styling. Het <section> is geen algemene containertag zoals het <div> element.
+
+Het <section> element is een semantisch element en is bedoeld om logisch bij elkaar horende elementen op een pagina te groeperen. Elke nieuwe <section> maakt een nieuwe tak in de documentstructuur. Bij een <div> gebeurt dat niet. Alle <section> elementen worden opgenomen in de documentstructuur (document outline) van het document.
+
+Wat is het verschil tussen een <article> en een <section> element? En 'mag' je het <div> element nog wel gebruiken? Lees meer daarover in HTML5: Section or Article? Van Ian Devlin.
+
+ Een bij elkaar horende groep elementen met inhoud zetten we best samen in een <section> element. -->
+
+            <article>
+                <p>
+                    <cite> 3. Betekenis en functie van (cite></cite>)
+                    <!-- Het <cite> element wordt gebruikt om aan te geven dat het gaat om een verwijzing naar de bron van een citaat (bijvoorbeeld een persoon of de titel van een boek), of naar andere bronnen. Meestal is de weergave cursief.
+    Het cite element is geherdefinieerd in HTML5. Voordien betekende het "een verwijzing naar andere bronnen," zoals hierboven nog altijd weergegeven. Maar strict genomen betekent het nu de titel van het werk.
+
+. Het cite element is een inline element, dus plaatsen we het in een p element. -->
+                    </cite>
+                </p>
+            </article>
+
+            <p>
+                4. Het adres-element
+
+            </p>
+            <!-- De <address> tag bepaalt de contact informatie voor de auteur/eigenaar van een document of van een artikel.
+Als het <address> element in een <body> element staat stelt het de contactinformatie voor een webpagina voor.
+
+Als het <address> element in een <article> element staat, stelt het de contactinformatie voor van dat artikel . -->
+        </main>
+
+        <!-- In het <aside> element plaats je elementen op de pagina die zijdelings bij een hoofdartikel of -sectie horen. De inhoud van <aside> … </aside> hoort bij het body element waarbinnen het ingebed is. Het <aside> element is geschikt voor quotes, video's, advertenties en bijvoorbeeld blokken met gerelateerde berichten of hyperlinks. De naam <aside> heeft niets te maken met de positie of visuele weergave van de inhoud.
+
+Als je een <aside> niet opneemt binnen een ander structuurelement zoals <section> of <article>, is het top-levelelement (body ) het element van de betreffende <aside> en slaat de inhoud ervan op de hele pagina. Dat kan de bedoeling zijn, maar meestal heeft dat semantisch gezien, geen enkel nut. Let er dus op dat de <aside>-tags binnen de juiste structuurtags worden geplaatst.
+
+. -->
+        <aside>5. Informatie over het aside element</aside>
+        <br>
+        <!-- Het aside element is een div met een specifieke semantiek (bedoeling/beketenis). Het is een blokelement, dus paginabreed, waarin je info aan de zijkant van je pagina plaatst.
+In het <aside> element plaats je elementen op de pagina die zijdelings bij een hoofdartikel of -sectie horen. De inhoud van <aside> … </aside> hoort bij het moeder element waarbinnen het ingebed is. Het <aside> element is geschikt voor quotes, video's, advertenties en bijvoorbeeld blokken met gerelateerde berichten of hyperlinks. De naam <aside> heeft niets te maken met de positie of visuele weergave van de inhoud.
+
+Als je een <aside> niet opneemt binnen een ander structuurelement zoals <section> of <article>, is het top-levelelement (body ) het moeder element van de betreffende <aside> en slaat de inhoud ervan op de hele pagina. Dat kan de bedoeling zijn, maar meestal heeft dat semantisch gezien, geen enkel nut. Let er dus op dat de <aside>-tags binnen de juiste structuurtags worden geplaatst.
+
+ -->
+        <aside>6. Informatie over de footer tag</aside><br>
+        <!-- de footer te vergelijken met de eindgeneriek
+    Het onderste gedeelte van een webpagina is een voettekst of footer. Dit gebied bevat meestal de naam van de onderneming of organisatie die de website, samen met relevante auteursrechtinformatie publiceert. Sommige websites zetten ook basisnavigatie, zoals "About Us," "Contact" en "Help" in de footer.
+
+Footers op webpagina's  zijn niet vereist, maar worden op bijna alle grote websites gebruikt. HTML 5 beschikt daarvoor over een <footer> tag, die speciaal ontworpen is om voettekstinformatie aan de onderkant van een webpagina te plaatsen. Bezoekers verwachten bepaalde informatie over een website te vinden wanneer ze naar de onderkant van een pagina in hun webbrowser scrollen.
+
+Maar net zoals met een header, kan een article of een section element ook een footer bevatten.
+
+ -->
+        <footer> 6EE staat in de footer</footer>
+    </body>
+
+</html>
